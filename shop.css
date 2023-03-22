@@ -1,0 +1,486 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;1,100;1,300&display=swap");
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  transition: 0.2s linear;
+}
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    right:3rem;
+    font-size: 1.5rem;
+    z-index: 1;
+}
+.application-icons{
+    position: absolute;
+    max-width:100%;
+    right:22rem;
+    top:15rem;
+}
+.icon2{
+    margin-left: 1rem;
+}
+.shop-images{
+    display: flex;
+    flex-wrap: wrap;
+}
+.shop-info{
+    width:24%;
+    font-size:1.5rem;
+    padding-left: 2rem;
+    margin-top: 6rem;
+}
+.shop-info p{
+    margin-top: 5rem;
+    margin-left: 2rem;
+}
+.shop-info button{
+    width:15rem;
+    height:4rem;
+    border-radius: 2rem;
+    margin-top: 1rem;
+    margin-left: 2rem;
+    color:white;
+    background-color: rgb(18,48,38);
+}
+.shop-image1{
+    background-image: url("images/shop-img1.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:27rem;
+    height:27rem;
+}
+.shop-image2{
+    background-image: url("images/shop-img2.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:27rem;
+    height:27rem;
+}
+.shop-image3{
+    background-image: url("images/shop-img3.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:27rem;
+    height:27rem;
+}
+.shop-image4{
+    background-image: url("images/shop-img4.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:27rem;
+    height:27rem;
+}
+.shop-image5{
+    background-image: url("images/shop-img5.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:27rem;
+    height:27rem;
+}
+.shop-image6{
+    background-image: url("images/shop-img6.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:27rem;
+    height:27rem;
+}
+.shop-image7{
+    background-image: url("images/shop-img7.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:27rem;
+    height:27rem;
+}
+.shop-image8{
+    background-image: url("images/shoe-img8.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:27rem;
+    height:27rem;
+}
+.shop-image9{
+    background-image: url("images/shop-img9.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:27rem;
+    height:27rem;
+}
+.shop-image10{
+    background-image: url("images/shop-img10.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:27rem;
+    height:27rem;
+}
+.shop-image11{
+    background-image: url("images/shop-img11.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:27rem;
+    height:27rem;
+}
+.shop-image12{
+    background-image: url("images/shop-img12.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:27rem;
+    height:27rem;
+}
+.shop-image13{
+    background-image: url("images/shop-img13.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:27rem;
+    height:27rem;
+}
+.shop-image13:hover{
+    transform:scale(1.1);
+}
+.shop-image14{
+    background-image: url("images/shop-img14.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:27rem;
+    height:27rem;
+}
+.shop-image15{
+    background-image: url("images/shop-img15.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:27rem;
+    height:27rem;
+}
+.shop-image16{
+    background-image: url("images/shop-img16.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:27rem;
+    height:27rem;
+}
+.shop-image17{
+    background-image: url("images/shop-img17.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:27rem;
+    height:27rem;
+}
+.shop-image18{
+    background-image: url("images/shop-img18.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:27rem;
+    height:27rem;
+}
+.shop-image19{
+    background-image: url("images/shop-img19.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:27rem;
+    height:27rem;
+}
+.shop-image20{
+    background-image: url("images/shop-img20.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:27rem;
+    height:27rem;
+}
+.shop-image21{
+    background-image: url("images/background-shoe.webp");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width:27rem;
+    height:27rem;
+}
+.shop-image22{
+    background-image: url("images/shop-img22.webp");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width:27rem;
+    height:27rem;
+}
+.shop-image23{
+    background-image: url("images/shop-img23.webp");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width:27rem;
+    height:27rem;
+}
+.shop-image24{
+    background-image: url("images/shoe3.webp");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width:27rem;
+    height:27rem;
+}
+.shop-image25{
+    background-image: url("images/Thesus-imgg.webp");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width:27rem;
+    height:27rem;
+}
+.shop-image1:hover{
+    background-image: url("images/img-hover.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:27rem;
+    height:27rem;
+    transform: scale(1.1);
+}
+.shop-image2:hover{
+    background-image: url("images/img-hover2.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:27rem;
+    height:27rem;
+    transform: scale(1.1);
+}
+.shop-image3:hover{
+    background-image: url("images/img-hover3.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:27rem;
+    height:27rem;
+    transform: scale(1.1);
+}
+.shop-image4:hover{
+    background-image: url("images/img-hover4.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:27rem;
+    height:27rem;
+    transform: scale(1.1);
+}
+.shop-image5:hover{
+    background-image: url("images/img-hover5.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:27rem;
+    height:27rem;
+    transform: scale(1.1);
+}
+.shop-image6:hover{
+    background-image: url("images/img-hover6.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:27rem;
+    height:27rem;
+    transform: scale(1.1);
+}
+.shop-image7:hover{
+    background-image: url("images/img-hover7.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:27rem;
+    height:27rem;
+    transform: scale(1.1);
+}
+.shop-image8:hover{
+    background-image: url("images/img-hover8.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:27rem;
+    height:27rem;
+    transform: scale(1.1);
+}
+.shop-image9:hover{
+    background-image: url("images/img-hover9.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:27rem;
+    height:27rem;
+    transform: scale(1.1);
+}
+.shop-image10:hover{
+    background-image: url("images/img-hover10.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:27rem;
+    height:27rem;
+    transform: scale(1.1);
+}
+.shop-image11:hover{
+    background-image: url("images/img-hover11.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:27rem;
+    height:27rem;
+    transform: scale(1.1);
+}
+.shop-image12:hover{
+    background-image: url("images/img-hover12.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:27rem;
+    height:27rem;
+    transform: scale(1.1);
+}
+.shop-image14:hover{
+    background-image: url("images/img-hover14.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:27rem;
+    height:27rem;
+    transform: scale(1.1);
+}
+.shop-image15:hover{
+    background-image: url("images/img-hover15.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:27rem;
+    height:27rem;
+    transform: scale(1.1);
+}
+.shop-image16:hover{
+    background-image: url("images/img-hover16.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:27rem;
+    height:27rem;
+    transform: scale(1.1);
+}
+.shop-image17:hover{
+    background-image: url("images/img-hover17.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:27rem;
+    height:27rem;
+    transform: scale(1.1);
+}
+.shop-image18:hover{
+    background-image: url("images/img-hover18.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:27rem;
+    height:27rem;
+    transform: scale(1.1);
+}
+.shop-image19:hover{
+    background-image: url("images/img-hover19.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:27rem;
+    height:27rem;
+    transform: scale(1.1);
+}
+.shop-image20:hover{
+    background-image: url("images/img-hover20.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:27rem;
+    height:27rem;
+    transform: scale(1.1);
+}
+.shop-image21:hover{
+    background-image: url("images/img-hover21.webp");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width:27rem;
+    height:27rem;
+    transform: scale(1.1);
+}
+.shop-image22:hover{
+    background-image: url("images/shoeImg.webp");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width:27rem;
+    height:27rem;
+    transform: scale(1.1);
+}
+.shop-image23:hover{
+    background-image: url("images/img-hover23.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:27rem;
+    height:27rem;
+    transform: scale(1.1);
+}
+.shop-image24:hover{
+    background-image: url("images/shoe2.webp");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width:27rem;
+    height:27rem;
+    transform: scale(1.1);
+}
+.shop-image25:hover{
+    transform:scale(1.1);
+}
+.contact-info{
+    display:flex;
+    margin-top: 4rem;
+}
+.get-in-touch{
+    font-size: 4.8rem;
+    padding-left: 1rem;
+    line-height: 8rem;
+}
+.form-input input{
+    border: 1px solid black;
+    width: 22rem;
+    height: 5rem;
+    padding-left: 1rem;
+    font-size: 1.5rem;
+}
+.form-input button{
+    height: 5rem;
+    width: 8rem;
+    margin-left: -0.3rem;
+    margin-top: -1.2rem;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 600;
+    background-color: rgb(18,48,38);
+}
+@media all and (max-width: 768px) {
+    .shop-images{
+        flex-direction: column;
+    }
+    .shop-info {
+      max-width: 400px;
+    }
+    .contact-info{
+        flex-direction: column;
+    }
+    /* . {
+
+        font-size: calc(0.5vw + 1.5rem);
+        line-height: normal;
+        padding-left: 0;
+      } */
+  }
+  @media (max-width: 768px) {
+    #price {
+      font-size: 14px;
+    }
+    .get-in-touch{
+       font-size: calc(0.5vw + 1.0rem);
+       line-height: normal;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    /* Display the dropdown content full width */
+    .dropdown-content {
+      width: 100%;
+      left: 0;
+      top: auto;
+      font-size: calc(0.5vw + 1.5rem);
+    }
+    .application-icons {
+        max-width: 50%;
+        
+      }
+  }

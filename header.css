@@ -1,0 +1,242 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;1,100;1,300&display=swap");
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  transition: 0.2s linear;
+}
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+.headerr {
+    border: 2px solid black;
+    font-size: 1.6rem;
+    height: 6.5rem;
+    padding: 2.2rem;
+    color: white;
+    background-color: rgb(18, 48, 38);
+    text-align: center;
+}
+.header{
+    background-color: rgb(237,190,234);
+    width:100%;
+}
+.navbar {
+    display: flex;
+    width: 60%;
+    margin-left: 10rem;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .header .navbar a {
+    font-size: 1.5rem;
+    color: black;
+  }
+  .header .navbar #nav-close {
+    font-size: 5rem;
+    cursor: pointer;
+    color: black;
+    display: none;
+  }
+  .logoz {
+    padding-left: 1.5rem;
+  }
+  .icons {
+    /* border:2px solid black; */
+    position: absolute;
+    top: 15.2%;
+    right: 0%;
+  }
+  .header .icons a,
+  .header .icons div {
+    font-size: 2.5rem;
+    cursor: pointer;
+    color: black;
+  }
+  .header #menu-btn {
+    display: none;
+  }
+  .search-form {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 15rem;
+    width: 100%;
+    background: white;
+    display: flex;
+    justify-content: center;
+    z-index: 10000;
+    transform: translateY(-110%);
+  }
+  
+  .search-form.active {
+    transform: translateY(0%);
+  }
+  
+  #close-search {
+    position: absolute;
+    top: 1.5rem;
+    right: 2.5rem;
+    cursor: pointer;
+    color: black;
+    font-size: 2rem;
+  }
+  #close-search:hover {
+    color: green;
+  }
+  form {
+    /* border:2px solid red; */
+    width: 100%;
+    padding-bottom: 2rem;
+    border-bottom: 0.2rem solid white;
+    display: flex;
+  }
+  form input {
+    width: 60%;
+    margin-top: 5rem;
+    font-size: 2rem;
+    margin-left: -20rem;
+    color: black;
+    text-transform: none;
+    background: none;
+    padding-right: 2rem;
+  }
+  
+  form input::placeholder {
+    color: #aaa;
+  }
+  
+  form label {
+    /* border:2px solid green; */
+    font-size: 2rem;
+    margin-top: 7.8rem;
+    margin-left: -76rem;
+    color: black;
+  }
+  form label:hover {
+    color: pink;
+  }
+  .top-para {
+    font-size: 2rem;
+    margin-left: 3rem;
+    margin-top: 2rem;
+  }
+  .contact-list {
+    display: none;
+    width: 23rem;
+    background-color: white;
+    height: 15rem;
+    font-size: 1.8rem;
+    line-height: 4rem;
+    padding-left: 4rem;
+    padding-top: 1rem;
+    position: absolute;
+    right: 0;
+    top: 15rem;
+  }
+  .contact a {
+    color: black;
+  }
+  .show {
+    display: block;
+  }
+  .side-popup {
+    /* border:2px solid black; */
+    display: none;
+    background-color: white;
+    width: 30%;
+    height: 65rem;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 10000;
+    transition: 1s;
+    box-shadow: 0 40px 60px rgba(0,0,0,0.1);
+  }
+  .side-popup.Active {
+    transform: translateX(0%);
+    display: block;
+  }
+  /* .Active{
+    display:block;
+  } */
+  .cart {
+    display: flex;
+    justify-content: space-between;
+    /* border:2px solid red; */
+  }
+  .cart-open {
+    color: black;
+    font-size: 1.7rem;
+    padding: 1rem;
+  }
+  .cart-close {
+    color: black;
+    font-size: 1.6rem;
+    padding: 1rem 1rem 0 0;
+  }
+  .cartImg img {
+    margin-left: 12rem;
+    margin-top: 3rem;
+  }
+  .check-cart {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 3rem;
+  }
+  .check-btn {
+    background-color: rgb(18, 48, 38);
+    color: white;
+    width: 25rem;
+    height: 4.5rem;
+    font-size: 1.5rem;
+    border-radius: 3rem;
+    margin-left: 5.5rem;
+    margin-top: 3rem;
+  }
+  @media screen and (max-width: 600px) {
+    .headerr {
+      height: auto;
+    }
+    .image-container {
+      height: auto;
+    }
+  }
+  @media (max-width: 900px) {
+    .header #menu-btn {
+      display: inline-block;
+    }
+    .header .navbar {
+      position: fixed;
+      top: 0;
+      left: -110%;
+      background: white;
+      z-index: 1;
+      width: 35rem;
+      height: 100%;
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .header .navbar.active {
+      left: 1rem;
+    }
+    .header .navbar a {
+      margin: 1rem 0;
+      font-size: 3rem;
+    }
+    .header .navbar #nav-close {
+      display: block;
+      position: absolute;
+      top: 1rem;
+      right: 2rem;
+    }
+  }
