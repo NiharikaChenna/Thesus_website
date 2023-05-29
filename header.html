@@ -1,80 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="header.css">
-</head>
-<body>
+    <link rel="stylesheet" href="header.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+  <body>
     <div class="headerr">
-        <p>Free Shipping and Exchanges. Easy Returns. Pay in 4</p>
+      <p>Free Shipping and Exchanges. Easy Returns. Pay in 4</p>
     </div>
-    <header class="header" style="display:flex;">
-        <a href="index.html" class="logoz"
-            ><img src="images/logo.webp" height="80" width="130"
+    <header class="header" style="display: flex">
+      <a href="index.html" class="logoz"
+        ><img src="images/logo.webp" height="80" width="130"
+      /></a>
+      <nav class="navbar">
+        <div id="nav-close" class="fas fa-times"></div>
+        <a href="#">Weekend boots</a>
+        <a href="#">Terrus Clogs</a>
+        <a href="#">Accessories</a>
+        <a href="shop.html">Shop All</a>
+        <a href="#">Values</a>
+      </nav>
+      <div class="icons">
+        <div id="menu-btn" class="fas fa-bars"></div>
+        <a href="#"
+          ><img
+            id="contact-btn"
+            onclick="popUp()"
+            src="images/contact.png"
+            height="25"
+            width="25"
         /></a>
-        <nav class="navbar">
-            <div id="nav-close" class="fas fa-times"></div>
-            <a href="#">Weekend boots</a>
-            <a href="#">Terrus Clogs</a>
-            <a href="#">Accessories</a>
-            <a href="shop.html">Shop All</a>
-            <a href="#">Values</a>
-        </nav>
-        <div class="icons">
-          <div id="menu-btn" class="fas fa-bars"></div> 
-          <a href="#"
-            ><img id="contact-btn" onclick="popUp()" src="images/contact.png" height="25" width="25"
-          /></a>
-          <a href="#"
-            ><img id="search-btn"
-              src="images/search-interface-symbol (1).png"
-              height="25"
-              width="25"
-          /></a>
-          <a href="#"><img id="cart-btn" src="images/bag.png" height="25" width="25" /></a>
-        </div>
+        <a href="#"
+          ><img
+            id="search-btn"
+            src="images/search-interface-symbol (1).png"
+            height="25"
+            width="25"
+        /></a>
+        <a href="#"
+          ><img id="cart-btn" src="images/bag.png" height="25" width="25"
+        /></a>
+      </div>
     </header>
     <div class="search-form">
-        <div id="close-search" class="fas fa-times"></div>
-        <form action="">
-           <p class="top-para">Find anything you need</p>
-           <input type="search" name="" placeholder="Red cotton..." id="search-box">
-           <label for="search-box" class="fas fa-search"></label>
-        </form>
+      <div id="close-search" class="fas fa-times"></div>
+      <form action="">
+        <p class="top-para">Find anything you need</p>
+        <input
+          type="search"
+          name=""
+          placeholder="Red cotton..."
+          id="search-box"
+        />
+        <label for="search-box" class="fas fa-search"></label>
+      </form>
+    </div>
+    <div class="contact-list" id="contact-list">
+      <div class="contact">
+        <img src="images/contact.png" height="18" width="18" />
+        <a href="login.html" id="login-btn" onclick="toggleContent()">Log in</a>
       </div>
-      <div class="contact-list" id="contact-list">
-        <div class="contact">
-          <img src="images/contact.png" height="18" width="18"/>
-          <a href="login.html" id="login-btn" onclick="toggleContent()">Log in</a>
-        </div>
-        <div class="contact">
-          <img src="images/contact.png" height="18" width="18"/>
-          <a href="register.html">Register</a>
-        </div>
-        <div class="contact">
-          <img
-          src="images/bag.png"
-          height="18"
-          width="18"/>
-          <a href="#">View cart</a>
-        </div>
+      <div class="contact">
+        <img src="images/contact.png" height="18" width="18" />
+        <a href="register.html">Register</a>
       </div>
-      <div class="side-popup">
-          <div class="cart">
-             <a href="#" class="cart-open">Your Cart(0)</a>
-             <a href="#" class="cart-close">close</a>
-          </div>
-          <div class="cartImg">
-            <img src="images/bag.png" height="120" width="120" />
-          </div>
-          <div class="cart-info">
-            <p class="check-cart">Your cart is empty</p>
-            <button class="check-btn">Check out our offering</button>
-          </div>
-        </div>
-        <script src="script.js"></script>
-</body>
+      <div class="contact">
+        <img src="images/bag.png" height="18" width="18" />
+        <a href="#">View cart</a>
+      </div>
+    </div>
+    <div class="side-popup">
+      <div class="cart">
+        <a href="#" class="cart-open">Your Cart(0)</a>
+        <a href="#" class="cart-close">close</a>
+      </div>
+      <div class="cartImg">
+        <img src="images/bag.png" height="120" width="120" />
+      </div>
+      <div class="cart-info">
+        <p class="check-cart">Your cart is empty</p>
+        <button class="check-btn">Check out our offering</button>
+      </div>
+    </div>
+    <!-- <script src="script.js"></script> -->
+  </body>
 </html>

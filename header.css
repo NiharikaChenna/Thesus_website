@@ -216,10 +216,10 @@ html {
     .header .navbar {
       position: fixed;
       top: 0;
-      left: -110%;
+      left: -100%;
       background: white;
       z-index: 1;
-      width: 35rem;
+      width: 30rem;
       height: 100%;
       display: flex;
       flex-flow: column;

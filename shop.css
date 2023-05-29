@@ -16,7 +16,6 @@ html {
   scroll-padding-top: 5rem;
 }
 .dropdown-content{
-    display: none;
     position: absolute;
     right:3rem;
     font-size: 1.5rem;
@@ -455,17 +454,8 @@ html {
     .contact-info{
         flex-direction: column;
     }
-    /* . {
-
-        font-size: calc(0.5vw + 1.5rem);
-        line-height: normal;
-        padding-left: 0;
-      } */
   }
   @media (max-width: 768px) {
-    #price {
-      font-size: 14px;
-    }
     .get-in-touch{
        font-size: calc(0.5vw + 1.0rem);
        line-height: normal;
@@ -473,12 +463,10 @@ html {
   }
   @media screen and (max-width: 600px) {
     /* Display the dropdown content full width */
-    .dropdown-content {
-      width: 100%;
+    /* .dropdown-content {
       left: 0;
       top: auto;
-      font-size: calc(0.5vw + 1.5rem);
-    }
+    } */
     .application-icons {
         max-width: 50%;
         

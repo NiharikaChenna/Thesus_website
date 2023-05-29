@@ -87,7 +87,7 @@ html {
 
 #close-search {
   position: absolute;
-  top: 1.5rem;
+  top: 5rem;
   right: 2.5rem;
   cursor: pointer;
   color: black;
@@ -473,10 +473,11 @@ ul {
   .header #menu-btn {
     display: inline-block;
   }
+  
   .header .navbar {
     position: fixed;
     top: 0;
-    left: -110%;
+    left: -120%;
     background: white;
     z-index: 1;
     width: 35rem;
@@ -485,14 +486,18 @@ ul {
     flex-flow: column;
     align-items: center;
     justify-content: center;
+    transition: left 0.3s ease-in-out;
   }
+  
   .header .navbar.active {
-    left: 1rem;
+    left: -25%;
   }
+  
   .header .navbar a {
     margin: 1rem 0;
     font-size: 3rem;
   }
+  
   .header .navbar #nav-close {
     display: block;
     position: absolute;
@@ -500,6 +505,7 @@ ul {
     right: 2rem;
   }
 }
+
 @media screen and (max-width: 991px) {
   .bg-header {
     font-size: calc(1vw + 1.5rem);
